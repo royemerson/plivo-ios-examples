@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Plivo Incoming View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="PlivoIncomingViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="538-4M-at0">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="216" id="IoR-WC-Ued"/>
+                                    <constraint firstAttribute="height" constant="68" id="P3S-Ke-url"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Plivo Incoming App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbW-3j-eZD">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="AhO-XR-ORg"/>
+                                    <constraint firstAttribute="width" constant="159" id="eOy-Ik-jeK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1D-Tq-DVt">
+                                <color key="backgroundColor" red="0.54509806630000002" green="0.77254909279999995" blue="0.19215688110000001" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="248" id="yhQ-e2-YXx"/>
+                                    <constraint firstAttribute="height" constant="57" id="yuk-s5-MhC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Answer">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="answerCall:" destination="2" eventType="touchUpInside" id="QdP-Aj-gzL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RMy-zm-x7K">
+                                <color key="backgroundColor" red="1" green="0.24993055478098536" blue="0.19831346379250736" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="fIm-P0-8ys"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Hangup">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="hangupCall:" destination="2" eventType="touchUpInside" id="iRz-2l-2ru"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EUm-WZ-nQH">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="306" id="8bX-4z-0yU"/>
+                                    <constraint firstAttribute="height" constant="125" id="WVM-CI-y3Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXs-MS-bFV">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="5Wp-Lc-zln"/>
+                                    <constraint firstAttribute="width" constant="243" id="xTM-UX-614"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zbW-3j-eZD" firstAttribute="top" secondItem="538-4M-at0" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="2NK-Ch-tbe"/>
+                            <constraint firstItem="RMy-zm-x7K" firstAttribute="centerX" secondItem="EUm-WZ-nQH" secondAttribute="centerX" type="default" id="Ajw-vi-CIW"/>
+                            <constraint firstItem="538-4M-at0" firstAttribute="top" secondItem="3" secondAttribute="top" constant="12" id="Cp1-ey-zWM"/>
+                            <constraint firstItem="b1D-Tq-DVt" firstAttribute="leading" secondItem="RMy-zm-x7K" secondAttribute="leading" type="default" id="HGu-Jd-c4f"/>
+                            <constraint firstItem="zbW-3j-eZD" firstAttribute="centerX" secondItem="538-4M-at0" secondAttribute="centerX" type="default" id="IEA-PE-ni4"/>
+                            <constraint firstItem="b1D-Tq-DVt" firstAttribute="trailing" secondItem="RMy-zm-x7K" secondAttribute="trailing" type="default" id="InY-YG-hfR"/>
+                            <constraint firstItem="RMy-zm-x7K" firstAttribute="top" secondItem="3" secondAttribute="top" constant="263" id="LXX-Lf-Cnb"/>
+                            <constraint firstItem="b1D-Tq-DVt" firstAttribute="top" secondItem="3" secondAttribute="top" constant="190" id="czZ-gk-hRh"/>
+                            <constraint firstItem="538-4M-at0" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="fc8-el-T3h"/>
+                            <constraint firstItem="b1D-Tq-DVt" firstAttribute="centerX" secondItem="538-4M-at0" secondAttribute="centerX" type="default" id="nOh-sg-icu"/>
+                            <constraint firstAttribute="bottom" secondItem="EUm-WZ-nQH" secondAttribute="bottom" constant="8" id="uhi-45-SuJ"/>
+                            <constraint firstItem="vXs-MS-bFV" firstAttribute="top" secondItem="zbW-3j-eZD" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="yA1-HR-rGm"/>
+                            <constraint firstItem="vXs-MS-bFV" firstAttribute="trailing" secondItem="b1D-Tq-DVt" secondAttribute="trailing" type="default" id="ybu-cC-JlS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerBtn" destination="b1D-Tq-DVt" id="k6n-VK-cmt"/>
+                        <outlet property="callLbl" destination="vXs-MS-bFV" id="IEa-An-1eR"/>
+                        <outlet property="hangupBtn" destination="RMy-zm-x7K" id="iKj-bY-jzA"/>
+                        <outlet property="logTextView" destination="EUm-WZ-nQH" id="ud3-h3-XMq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo.png" width="121" height="37"/>
+    </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="PlivoIncomingViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PlivoIncomingViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="answerCall:"/>
+                <relationship kind="action" name="hangupCall:"/>
+                <relationship kind="outlet" name="answerBtn" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="callLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="hangupBtn" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="logTextView" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

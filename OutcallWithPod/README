@@ -1,0 +1,6 @@
+Example of using Plivo SDK from cocoapods.
+
+USAGE
+pod install
+open OutcallWithPod.xcworkspace
+go to target -> build phases -> link binary with libraries . Then remove libPods.a
