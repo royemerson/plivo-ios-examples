@@ -59,7 +59,13 @@
 /* Disconnect the call
  
  Calling this method on the PlivoOutgoing object would disconnect the call.
+ This method is deprecated, please use 'hangup'
  */
-- (void)disconnect;
+- (void)disconnect __attribute__((deprecated));
 
+/**
+ * Hangup the call.
+ * Calling this method on the PlivoOutgoing object would disconnect the call.
+ */
+- (void)hangup;
 @end
