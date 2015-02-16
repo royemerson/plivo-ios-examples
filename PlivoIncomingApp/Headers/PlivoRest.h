@@ -2,10 +2,9 @@
 //  PlivoRest.h
 //  PlivoEndpoint
 //
-//  Copyright (c) 2013 Plivo Inc. All rights reserved.
+//  Copyright (c) 2015 Plivo Inc. All rights reserved.
 //  Use of this software is subject to the
 //  terms mentioned here, http://plivo.com/terms/
-
 @protocol PlivoRestDelegate<NSObject>
 
 /* This delegate gets called on a successful response, along with the identifier of the API used.
