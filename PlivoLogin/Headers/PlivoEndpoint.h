@@ -2,7 +2,7 @@
 //  PlivoEndpoint.h
 //  PlivoEndpoint
 //
-//  Copyright (c) 2013 Plivo Inc. All rights reserved.
+//  Copyright (c) 2015 Plivo Inc. All rights reserved.
 //  Use of this software is subject to the
 //  terms mentioned here, http://plivo.com/terms/
 
@@ -135,6 +135,11 @@ typedef enum
  */
 - (PlivoOutgoing *)createOutgoingCall;
 
+/* Calling this method resets the endpoint */
+
++ (void)resetEndpoint;
+
+
 /* Notifications */
 - (void)onLoginNotification;
 - (void)onLoginFailedNotification;
@@ -153,6 +158,8 @@ typedef enum
 - (void)onOutgoingCallInvalidNotification:(PlivoOutgoing *)outgoing;
 - (void)onOutgoingCallHangupNotification:(PlivoOutgoing *)outgoing;
 
-
 @end
+
+
+
 

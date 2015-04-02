@@ -2,7 +2,7 @@
 //  PlivoEndpoint.h
 //  PlivoEndpoint
 //
-//  Copyright (c) 2013 Plivo Inc. All rights reserved.
+//  Copyright (c) 2015 Plivo Inc. All rights reserved.
 //  Use of this software is subject to the
 //  terms mentioned here, http://plivo.com/terms/
 
@@ -30,6 +30,12 @@ typedef enum
  */
 - (void)onLoginFailed;
 
+/**
+ * This delegate gets called when endpoint logged out.
+ */
+- (void)onLogout;
+ 
+
 /* On an incoming call to a registered endpoint, this delegate receives
  a PlivoIncoming object.
  */
@@ -49,6 +55,10 @@ typedef enum
  received on the call.
  */
 - (void)onIncomingDigit:(NSString *)digit;
+
+/* When an outgoing call is started, this delegate would be called with
+ the PlivoOutgoing object*/
+- (void)onCalling:(PlivoOutgoing *)call;
 
 /* When an outgoing call is answered, this delegate would be called with
  the PlivoOutgoing object
@@ -88,6 +98,16 @@ typedef enum
 @property (nonatomic, assign) id delegate;
 @property (nonatomic, readwrite) PlivoAccId accId;
 
+/**
+ * Init endpoint object.
+ * It will initialize endpoint object and set debug flag to false.
+ */
+- (id)init;
+
+/**
+ * Init endpoint object and specify it's debug flag
+ */
+- (id)initWithDebug:(BOOL)isDebug;
 
 /* Registers an endpoint
  
@@ -115,9 +135,15 @@ typedef enum
  */
 - (PlivoOutgoing *)createOutgoingCall;
 
+/* Calling this method resets the endpoint */
+
++ (void)resetEndpoint;
+
+
 /* Notifications */
 - (void)onLoginNotification;
 - (void)onLoginFailedNotification;
+- (void)onLogoutNotification;
 
 - (void)onIncomingCallNotification:(PlivoIncoming *)incoming;
 - (void)onIncomingCallRejectedNotification:(PlivoIncoming *)incoming;
@@ -125,12 +151,15 @@ typedef enum
 
 - (void)onIncomingDigitNotification:(NSString *)digit;
 
+- (void)onOutgoingCallNotification:(PlivoOutgoing *)outgoing;
 - (void)onOutgoingCallRingingNotification:(PlivoOutgoing *)outgoing;
 - (void)onOutgoingCallAnsweredNotification:(PlivoOutgoing *)outgoing;
 - (void)onOutgoingCallRejectedNotification:(PlivoOutgoing *)outgoing;
 - (void)onOutgoingCallInvalidNotification:(PlivoOutgoing *)outgoing;
 - (void)onOutgoingCallHangupNotification:(PlivoOutgoing *)outgoing;
 
-
 @end
+
+
+
 

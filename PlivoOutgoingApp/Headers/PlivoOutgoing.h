@@ -2,7 +2,7 @@
 //  PlivoOutgoing.h
 //  PlivoEndpoint
 //
-//  Copyright (c) 2013 Plivo Inc. All rights reserved.
+//  Copyright (c) 2015 Plivo Inc. All rights reserved.
 //  Use of this software is subject to the
 //  terms mentioned here, http://plivo.com/terms/
 
@@ -59,7 +59,13 @@
 /* Disconnect the call
  
  Calling this method on the PlivoOutgoing object would disconnect the call.
+ This method is deprecated, please use 'hangup'
  */
-- (void)disconnect;
+- (void)disconnect __attribute__((deprecated));
 
+/**
+ * Hangup the call.
+ * Calling this method on the PlivoOutgoing object would disconnect the call.
+ */
+- (void)hangup;
 @end
