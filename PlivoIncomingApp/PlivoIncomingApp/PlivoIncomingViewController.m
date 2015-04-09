@@ -14,7 +14,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *muteBtn;
 @property (weak, nonatomic) IBOutlet UITextView *logTextView;
 @property (weak, nonatomic) IBOutlet UILabel *callLbl;
-@property (weak, nonatomic) IBOutlet UITextField *numberPad;
 
 - (IBAction)answerCall:(id)sender;
 - (IBAction)hangupCall:(id)sender;
@@ -43,7 +42,6 @@
     [self.muteBtn setHidden:YES];
     [self.answerBtn setHidden:YES];
     [self.hangupBtn setHidden:YES];
-    [self.numberPad setHidden:YES];
     
 }
 
@@ -192,8 +190,6 @@
         [self.incCall answer];
         [self.answerBtn setHidden:YES];
         [self.muteBtn setHidden:NO];
-        [self.numberPad setHidden:NO];
-        _numberPad.keyboardType = UIKeyboardTypeNumberPad;
     }
     
 }
@@ -210,7 +206,6 @@
     [self.muteBtn setHidden:YES];
     [self.answerBtn setHidden:YES];
     [self.hangupBtn setHidden:YES];
-    [self.numberPad setHidden:YES];
 }
 
 /**
