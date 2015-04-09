@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none" useAutolayout="YES" promptedForUpgradeToXcode5="NO" initialViewController="2">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <development version="4600" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--Plivo View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="PlivoViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WvM-WF-pHP">
+                                <rect key="frame" x="29" y="281" width="262" height="57"/>
+                                <color key="backgroundColor" red="0.54509806630000002" green="0.77254909279999995" blue="0.19215688110000001" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="dKD-Ru-8q7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="normal" title="Create and Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="createAndLogin:" destination="2" eventType="touchUpInside" id="00q-nb-LD5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8AS-Dh-TGB">
+                                <rect key="frame" x="29" y="351" width="262" height="57"/>
+                                <color key="backgroundColor" red="0.85332455842391308" green="0.17333608103435202" blue="0.2376131862748761" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="wYk-cv-aFc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Logout and Destroy">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutAndDestroy:" destination="2" eventType="touchUpInside" id="6jC-60-yFb"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HQb-8E-a91">
+                                <rect key="frame" x="10" y="425" width="300" height="114"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="R8L-y4-pLI"/>
+                                    <constraint firstAttribute="height" constant="114" id="gXJ-TT-282"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lSy-db-BMP">
+                                <rect key="frame" x="25" y="64" width="279" height="62"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="279" id="3GE-wl-YWg"/>
+                                    <constraint firstAttribute="height" constant="62" id="l5N-bL-wD4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qxj-X1-a91">
+                                <rect key="frame" x="64" y="20" width="183" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="183" id="5dy-a3-A2S"/>
+                                    <constraint firstAttribute="height" constant="36" id="DNg-u5-Ccj"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="90c-s8-D6B">
+                                <rect key="frame" x="88" y="234" width="135" height="51"/>
+                                <color key="backgroundColor" red="0.49650893224851478" green="0.79166666666666663" blue="0.085074001684156866" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="5l2-ri-6WL"/>
+                                    <constraint firstAttribute="height" constant="51" id="xux-ry-eMj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Call">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="makeCall:" destination="2" eventType="touchUpInside" id="jmz-fY-fcO"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number/SIP URI" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AKs-ay-AQ4">
+                                <rect key="frame" x="29" y="175" width="262" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="262" id="q8p-cA-EhV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXB-MB-O9o">
+                                <rect key="frame" x="88" y="293" width="135" height="51"/>
+                                <color key="backgroundColor" red="0.87892597853535359" green="0.28340948432558738" blue="0.17062257440807274" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="iFA-4q-gwV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Hangup">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="hangupCall:" destination="2" eventType="touchUpInside" id="hnR-9u-zIb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="90c-s8-D6B" firstAttribute="trailing" secondItem="bXB-MB-O9o" secondAttribute="trailing" type="default" id="0NA-t2-7ZX"/>
+                            <constraint firstItem="8AS-Dh-TGB" firstAttribute="trailing" secondItem="WvM-WF-pHP" secondAttribute="trailing" type="default" id="0uu-8m-25u"/>
+                            <constraint firstItem="90c-s8-D6B" firstAttribute="top" secondItem="3" secondAttribute="top" constant="234" id="2Ld-Ag-NbT"/>
+                            <constraint firstAttribute="bottom" secondItem="8AS-Dh-TGB" secondAttribute="bottom" constant="140" id="5WN-Jb-sFi"/>
+                            <constraint firstItem="lSy-db-BMP" firstAttribute="top" secondItem="Qxj-X1-a91" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="GEl-we-fOy"/>
+                            <constraint firstItem="Qxj-X1-a91" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="IOu-Em-kKj"/>
+                            <constraint firstItem="8AS-Dh-TGB" firstAttribute="leading" secondItem="WvM-WF-pHP" secondAttribute="leading" type="default" id="JeW-7E-g7x"/>
+                            <constraint firstItem="8AS-Dh-TGB" firstAttribute="centerX" secondItem="HQb-8E-a91" secondAttribute="centerX" type="default" id="KlU-Jb-S25"/>
+                            <constraint firstItem="90c-s8-D6B" firstAttribute="leading" secondItem="bXB-MB-O9o" secondAttribute="leading" type="default" id="PZh-Jj-3LS"/>
+                            <constraint firstItem="WvM-WF-pHP" firstAttribute="trailing" secondItem="AKs-ay-AQ4" secondAttribute="trailing" type="default" id="RRc-OD-nzC"/>
+                            <constraint firstItem="AKs-ay-AQ4" firstAttribute="leading" secondItem="WvM-WF-pHP" secondAttribute="leading" type="default" id="bfT-Mi-RZy"/>
+                            <constraint firstAttribute="bottom" secondItem="WvM-WF-pHP" secondAttribute="bottom" constant="210" id="bgn-1F-wkl"/>
+                            <constraint firstAttribute="bottom" secondItem="HQb-8E-a91" secondAttribute="bottom" constant="9" id="bpt-4x-kxi"/>
+                            <constraint firstItem="bXB-MB-O9o" firstAttribute="top" secondItem="90c-s8-D6B" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="c4E-Yv-5yn"/>
+                            <constraint firstItem="lSy-db-BMP" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="25" id="hVB-Q3-M5M"/>
+                            <constraint firstItem="WvM-WF-pHP" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="pHy-LV-NcU"/>
+                            <constraint firstItem="AKs-ay-AQ4" firstAttribute="top" secondItem="3" secondAttribute="top" constant="175" id="ttS-2x-gc3"/>
+                            <constraint firstItem="90c-s8-D6B" firstAttribute="centerX" secondItem="Qxj-X1-a91" secondAttribute="centerX" type="default" id="vw5-U1-D3z"/>
+                            <constraint firstItem="90c-s8-D6B" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="88" id="zdX-yq-lIe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="callBtn" destination="90c-s8-D6B" id="SOa-7s-cPz"/>
+                        <outlet property="createLoginBtn" destination="WvM-WF-pHP" id="4Ta-LI-DHO"/>
+                        <outlet property="hangupBtn" destination="bXB-MB-O9o" id="i7B-16-NbV"/>
+                        <outlet property="logTextView" destination="HQb-8E-a91" id="J7M-mT-IeD"/>
+                        <outlet property="logoutDestroyBtn" destination="8AS-Dh-TGB" id="3Nf-V5-tKU"/>
+                        <outlet property="resultView" destination="lSy-db-BMP" id="YWG-MY-flz"/>
+                        <outlet property="textField" destination="AKs-ay-AQ4" id="h2X-vh-3pa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo.png" width="155" height="45"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

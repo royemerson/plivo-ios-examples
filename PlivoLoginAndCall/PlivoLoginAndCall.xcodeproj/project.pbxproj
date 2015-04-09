@@ -1,0 +1,376 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		002221F418039F8200BAA5D0 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 002221F318039F8200BAA5D0 /* logo.png */; };
+		006D907F18029DA500D56CA8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006D907E18029DA500D56CA8 /* QuartzCore.framework */; };
+		006D908118029DAB00D56CA8 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006D908018029DAB00D56CA8 /* OpenGLES.framework */; };
+		006D908318029DB600D56CA8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006D908218029DB600D56CA8 /* Security.framework */; };
+		008311871802768D005DE4BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 008311861802768D005DE4BE /* UIKit.framework */; };
+		008311891802768D005DE4BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 008311881802768D005DE4BE /* Foundation.framework */; };
+		0083118B1802768D005DE4BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0083118A1802768D005DE4BE /* CoreGraphics.framework */; };
+		008311911802768D005DE4BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0083118F1802768D005DE4BE /* InfoPlist.strings */; };
+		008311931802768D005DE4BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 008311921802768D005DE4BE /* main.m */; };
+		008311971802768D005DE4BE /* PlivoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 008311961802768D005DE4BE /* PlivoAppDelegate.m */; };
+		008311991802768D005DE4BE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 008311981802768D005DE4BE /* Default.png */; };
+		0083119B1802768D005DE4BE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0083119A1802768D005DE4BE /* Default@2x.png */; };
+		0083119D1802768D005DE4BE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0083119C1802768D005DE4BE /* Default-568h@2x.png */; };
+		008311A01802768D005DE4BE /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0083119E1802768D005DE4BE /* MainStoryboard_iPhone.storyboard */; };
+		008311A31802768D005DE4BE /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 008311A11802768D005DE4BE /* MainStoryboard_iPad.storyboard */; };
+		008311A61802768D005DE4BE /* PlivoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 008311A51802768D005DE4BE /* PlivoViewController.m */; };
+		008311AD18028ACA005DE4BE /* libPlivoEndpoint.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 008311AC18028ACA005DE4BE /* libPlivoEndpoint.a */; };
+		008311AF18028AE0005DE4BE /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 008311AE18028AE0005DE4BE /* CoreAudio.framework */; };
+		008311B118028AE9005DE4BE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 008311B018028AE9005DE4BE /* AudioToolbox.framework */; };
+		008311B318028AF1005DE4BE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 008311B218028AF1005DE4BE /* CFNetwork.framework */; };
+		008311B518028AF8005DE4BE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 008311B418028AF8005DE4BE /* AVFoundation.framework */; };
+		008311B718028B0C005DE4BE /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 008311B618028B0C005DE4BE /* CoreMedia.framework */; };
+		008311BA18028B31005DE4BE /* Phone.m in Sources */ = {isa = PBXBuildFile; fileRef = 008311B918028B31005DE4BE /* Phone.m */; };
+		008311BC18028FD7005DE4BE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 008311BB18028FD7005DE4BE /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		002221F318039F8200BAA5D0 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = SOURCE_ROOT; };
+		006D907E18029DA500D56CA8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		006D908018029DAB00D56CA8 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		006D908218029DB600D56CA8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		008311831802768D005DE4BE /* PlivoLoginAndCall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlivoLoginAndCall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		008311861802768D005DE4BE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		008311881802768D005DE4BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0083118A1802768D005DE4BE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0083118E1802768D005DE4BE /* PlivoLoginAndCall-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PlivoLoginAndCall-Info.plist"; sourceTree = "<group>"; };
+		008311901802768D005DE4BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		008311921802768D005DE4BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		008311941802768D005DE4BE /* PlivoLoginAndCall-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlivoLoginAndCall-Prefix.pch"; sourceTree = "<group>"; };
+		008311951802768D005DE4BE /* PlivoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlivoAppDelegate.h; sourceTree = "<group>"; };
+		008311961802768D005DE4BE /* PlivoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlivoAppDelegate.m; sourceTree = "<group>"; };
+		008311981802768D005DE4BE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		0083119A1802768D005DE4BE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		0083119C1802768D005DE4BE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		0083119F1802768D005DE4BE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		008311A21802768D005DE4BE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		008311A41802768D005DE4BE /* PlivoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlivoViewController.h; sourceTree = "<group>"; };
+		008311A51802768D005DE4BE /* PlivoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlivoViewController.m; sourceTree = "<group>"; };
+		008311AC18028ACA005DE4BE /* libPlivoEndpoint.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPlivoEndpoint.a; sourceTree = "<group>"; };
+		008311AE18028AE0005DE4BE /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		008311B018028AE9005DE4BE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		008311B218028AF1005DE4BE /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		008311B418028AF8005DE4BE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		008311B618028B0C005DE4BE /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		008311B818028B31005DE4BE /* Phone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Phone.h; sourceTree = "<group>"; };
+		008311B918028B31005DE4BE /* Phone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Phone.m; sourceTree = "<group>"; };
+		008311BB18028FD7005DE4BE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		008311801802768D005DE4BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				006D908318029DB600D56CA8 /* Security.framework in Frameworks */,
+				006D908118029DAB00D56CA8 /* OpenGLES.framework in Frameworks */,
+				006D907F18029DA500D56CA8 /* QuartzCore.framework in Frameworks */,
+				008311BC18028FD7005DE4BE /* SystemConfiguration.framework in Frameworks */,
+				008311B718028B0C005DE4BE /* CoreMedia.framework in Frameworks */,
+				008311B518028AF8005DE4BE /* AVFoundation.framework in Frameworks */,
+				008311B318028AF1005DE4BE /* CFNetwork.framework in Frameworks */,
+				008311B118028AE9005DE4BE /* AudioToolbox.framework in Frameworks */,
+				008311AF18028AE0005DE4BE /* CoreAudio.framework in Frameworks */,
+				008311AD18028ACA005DE4BE /* libPlivoEndpoint.a in Frameworks */,
+				008311871802768D005DE4BE /* UIKit.framework in Frameworks */,
+				008311891802768D005DE4BE /* Foundation.framework in Frameworks */,
+				0083118B1802768D005DE4BE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0083117A1802768D005DE4BE = {
+			isa = PBXGroup;
+			children = (
+				006D908218029DB600D56CA8 /* Security.framework */,
+				006D908018029DAB00D56CA8 /* OpenGLES.framework */,
+				006D907E18029DA500D56CA8 /* QuartzCore.framework */,
+				008311BB18028FD7005DE4BE /* SystemConfiguration.framework */,
+				008311B618028B0C005DE4BE /* CoreMedia.framework */,
+				008311B418028AF8005DE4BE /* AVFoundation.framework */,
+				008311B218028AF1005DE4BE /* CFNetwork.framework */,
+				008311B018028AE9005DE4BE /* AudioToolbox.framework */,
+				008311AE18028AE0005DE4BE /* CoreAudio.framework */,
+				008311AC18028ACA005DE4BE /* libPlivoEndpoint.a */,
+				0083118C1802768D005DE4BE /* PlivoLoginAndCall */,
+				008311851802768D005DE4BE /* Frameworks */,
+				008311841802768D005DE4BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		008311841802768D005DE4BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				008311831802768D005DE4BE /* PlivoLoginAndCall.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		008311851802768D005DE4BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				008311861802768D005DE4BE /* UIKit.framework */,
+				008311881802768D005DE4BE /* Foundation.framework */,
+				0083118A1802768D005DE4BE /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0083118C1802768D005DE4BE /* PlivoLoginAndCall */ = {
+			isa = PBXGroup;
+			children = (
+				002221F318039F8200BAA5D0 /* logo.png */,
+				008311951802768D005DE4BE /* PlivoAppDelegate.h */,
+				008311961802768D005DE4BE /* PlivoAppDelegate.m */,
+				0083119E1802768D005DE4BE /* MainStoryboard_iPhone.storyboard */,
+				008311A11802768D005DE4BE /* MainStoryboard_iPad.storyboard */,
+				008311A41802768D005DE4BE /* PlivoViewController.h */,
+				008311A51802768D005DE4BE /* PlivoViewController.m */,
+				0083118D1802768D005DE4BE /* Supporting Files */,
+				008311B818028B31005DE4BE /* Phone.h */,
+				008311B918028B31005DE4BE /* Phone.m */,
+			);
+			name = PlivoLoginAndCall;
+			path = PlivoLogin;
+			sourceTree = "<group>";
+		};
+		0083118D1802768D005DE4BE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0083118E1802768D005DE4BE /* PlivoLoginAndCall-Info.plist */,
+				0083118F1802768D005DE4BE /* InfoPlist.strings */,
+				008311921802768D005DE4BE /* main.m */,
+				008311941802768D005DE4BE /* PlivoLoginAndCall-Prefix.pch */,
+				008311981802768D005DE4BE /* Default.png */,
+				0083119A1802768D005DE4BE /* Default@2x.png */,
+				0083119C1802768D005DE4BE /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		008311821802768D005DE4BE /* PlivoLoginAndCall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 008311A91802768D005DE4BE /* Build configuration list for PBXNativeTarget "PlivoLoginAndCall" */;
+			buildPhases = (
+				0083117F1802768D005DE4BE /* Sources */,
+				008311801802768D005DE4BE /* Frameworks */,
+				008311811802768D005DE4BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlivoLoginAndCall;
+			productName = PlivoLogin;
+			productReference = 008311831802768D005DE4BE /* PlivoLoginAndCall.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0083117B1802768D005DE4BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PlivoLogin;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Plivo;
+			};
+			buildConfigurationList = 0083117E1802768D005DE4BE /* Build configuration list for PBXProject "PlivoLoginAndCall" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0083117A1802768D005DE4BE;
+			productRefGroup = 008311841802768D005DE4BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				008311821802768D005DE4BE /* PlivoLoginAndCall */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		008311811802768D005DE4BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				008311911802768D005DE4BE /* InfoPlist.strings in Resources */,
+				008311991802768D005DE4BE /* Default.png in Resources */,
+				0083119B1802768D005DE4BE /* Default@2x.png in Resources */,
+				0083119D1802768D005DE4BE /* Default-568h@2x.png in Resources */,
+				008311A01802768D005DE4BE /* MainStoryboard_iPhone.storyboard in Resources */,
+				008311A31802768D005DE4BE /* MainStoryboard_iPad.storyboard in Resources */,
+				002221F418039F8200BAA5D0 /* logo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0083117F1802768D005DE4BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				008311931802768D005DE4BE /* main.m in Sources */,
+				008311971802768D005DE4BE /* PlivoAppDelegate.m in Sources */,
+				008311A61802768D005DE4BE /* PlivoViewController.m in Sources */,
+				008311BA18028B31005DE4BE /* Phone.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0083118F1802768D005DE4BE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				008311901802768D005DE4BE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0083119E1802768D005DE4BE /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0083119F1802768D005DE4BE /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		008311A11802768D005DE4BE /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				008311A21802768D005DE4BE /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		008311A71802768D005DE4BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		008311A81802768D005DE4BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		008311AA1802768D005DE4BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PlivoLogin/PlivoLoginAndCall-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Headers/";
+				INFOPLIST_FILE = "PlivoLogin/PlivoLoginAndCall-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)";
+				PRODUCT_NAME = PlivoLoginAndCall;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		008311AB1802768D005DE4BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PlivoLogin/PlivoLoginAndCall-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Headers/";
+				INFOPLIST_FILE = "PlivoLogin/PlivoLoginAndCall-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)";
+				PRODUCT_NAME = PlivoLoginAndCall;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0083117E1802768D005DE4BE /* Build configuration list for PBXProject "PlivoLoginAndCall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				008311A71802768D005DE4BE /* Debug */,
+				008311A81802768D005DE4BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		008311A91802768D005DE4BE /* Build configuration list for PBXNativeTarget "PlivoLoginAndCall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				008311AA1802768D005DE4BE /* Debug */,
+				008311AB1802768D005DE4BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0083117B1802768D005DE4BE /* Project object */;
+}
