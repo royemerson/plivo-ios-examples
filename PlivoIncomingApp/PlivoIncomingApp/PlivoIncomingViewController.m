@@ -11,12 +11,15 @@
 @interface PlivoIncomingViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *answerBtn;
 @property (weak, nonatomic) IBOutlet UIButton *hangupBtn;
+@property (weak, nonatomic) IBOutlet UIButton *muteBtn;
 @property (weak, nonatomic) IBOutlet UITextView *logTextView;
 @property (weak, nonatomic) IBOutlet UILabel *callLbl;
+@property (weak, nonatomic) IBOutlet UITextField *numberPad;
 
 - (IBAction)answerCall:(id)sender;
-
 - (IBAction)hangupCall:(id)sender;
+- (IBAction)muteCall:(id)sender;
+
 
 @property PlivoIncoming *incCall;
 
@@ -32,11 +35,15 @@
     [self.logTextView setText:@"- Logging in\n"];
     [self.phone login];
 
-    [self resetUI];
+    // [self resetUI];
     
     /* set delegate for debug log text view */
     self.logTextView.delegate = self;
     [self.callLbl setText:@""];
+    [self.muteBtn setHidden:YES];
+    [self.answerBtn setHidden:YES];
+    [self.hangupBtn setHidden:YES];
+    [self.numberPad setHidden:YES];
     
 }
 
@@ -125,6 +132,11 @@
      /* display caller name in call status label */
     [[NSOperationQueue mainQueue] addOperationWithBlock:^{
         [self.callLbl setText:incoming.fromContact];
+        [self.answerBtn setHidden:NO];
+        [self.hangupBtn setHidden:NO];
+        [self.answerBtn setEnabled:YES];
+        [self.hangupBtn setEnabled:YES];
+
     }];
     
     /* log it */
@@ -134,9 +146,6 @@
     /* assign incCall var */
     self.incCall = incoming;
     
-    /* enable answer & hangup button */
-    [self.answerBtn setEnabled:YES];
-    [self.hangupBtn setEnabled:YES];
     
     /* print extra header */
     if (incoming.extraHeaders.count > 0) {
@@ -181,8 +190,12 @@
     /* answer the call */
     if (self.incCall) {
         [self.incCall answer];
-        [self.answerBtn setEnabled:NO];
+        [self.answerBtn setHidden:YES];
+        [self.muteBtn setHidden:NO];
+        [self.numberPad setHidden:NO];
+        _numberPad.keyboardType = UIKeyboardTypeNumberPad;
     }
+    
 }
 
 /**
@@ -194,6 +207,34 @@
         [self.incCall hangup];
     }
     [self resetUI];
+    [self.muteBtn setHidden:YES];
+    [self.answerBtn setHidden:YES];
+    [self.hangupBtn setHidden:YES];
+    [self.numberPad setHidden:YES];
+}
+
+/**
+ * Mute a call.
+ */
+- (IBAction)muteCall:(id)sender {
+    
+    if ([_muteBtn.currentTitle  isEqual: @"Mute"]) {
+        [self logDebug:@"- Mute a call"];
+        if (self.incCall) {
+            [self.incCall mute];
+        }
+        [self.muteBtn setTitle:@"Unmute" forState:UIControlStateNormal];
+    }
+    else {
+        [self logDebug:@"- Unmute a call"];
+        if (self.incCall) {
+            [self.incCall unmute];
+        }
+        [self.muteBtn setTitle:@"Mute" forState:UIControlStateNormal];
+    }
+    
 }
 
 @end
+
+

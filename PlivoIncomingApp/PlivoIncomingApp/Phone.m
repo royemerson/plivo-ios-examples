@@ -24,8 +24,8 @@
 - (void)login
 {
 #warning Change to valid plivo endpoint username and password.
-    NSString *username = @"plivo_username";
-    NSString *password = @"password";
+    NSString *username = @"Your SIP Endpoint Username";
+    NSString *password = @"Your SIP Endpoint Password";
     [endpoint login:username AndPassword:password];    
 }
 
