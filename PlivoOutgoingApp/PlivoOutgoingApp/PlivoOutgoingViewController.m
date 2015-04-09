@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Plivo. All rights reserved.
 //
 
-#import "PlivoViewController.h"
+#import "PlivoOutgoingViewController.h"
 
-@interface PlivoViewController ()
+@interface PlivoOutgoingViewController ()
 
 @property (weak, nonatomic) IBOutlet UIButton *callBtn;
 @property (weak, nonatomic) IBOutlet UIButton *hangupBtn;
@@ -20,7 +20,7 @@
 
 @end
 
-@implementation PlivoViewController {
+@implementation PlivoOutgoingViewController {
     PlivoOutgoing *outCall;
 }
 
@@ -152,7 +152,7 @@
     [self logDebug:@"- Hangup the call"];
     
     /* hang it up */
-    [outCall disconnect];
+    [outCall hangup];
     
     /* disable hangup and enable call*/
     [self enableCallDisableHangup];

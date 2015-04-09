@@ -7,7 +7,7 @@
 //
 
 #import "PlivoAppDelegate.h"
-#import "PlivoViewController.h"
+#import "PlivoOutgoingViewController.h"
 
 @implementation PlivoAppDelegate
 
@@ -17,7 +17,7 @@
     self.phone = [[Phone alloc] init];
     
     /* get view controller object */
-    self.viewController = (PlivoViewController *)self.window.rootViewController;
+    self.viewController = (PlivoOutgoingViewController *)self.window.rootViewController;
     
     self.viewController.phone = self.phone;
     

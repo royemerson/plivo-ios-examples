@@ -10,7 +10,7 @@
 #import "PlivoEndpoint.h"
 #import "Phone.h"
 
-@interface PlivoViewController : UIViewController<PlivoEndpointDelegate, UITextViewDelegate, UITextFieldDelegate>
+@interface PlivoOutgoingViewController : UIViewController<PlivoEndpointDelegate, UITextViewDelegate, UITextFieldDelegate>
 
 @property Phone *phone;
 

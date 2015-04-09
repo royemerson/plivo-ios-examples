@@ -18,7 +18,7 @@
 		0048B20617FBFF3E002B786C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0048B20517FBFF3E002B786C /* Default-568h@2x.png */; };
 		0048B20917FBFF3E002B786C /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0048B20717FBFF3E002B786C /* MainStoryboard_iPhone.storyboard */; };
 		0048B20C17FBFF3E002B786C /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0048B20A17FBFF3E002B786C /* MainStoryboard_iPad.storyboard */; };
-		0048B20F17FBFF3E002B786C /* PlivoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0048B20E17FBFF3E002B786C /* PlivoViewController.m */; };
+		0048B20F17FBFF3E002B786C /* PlivoOutgoingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0048B20E17FBFF3E002B786C /* PlivoOutgoingViewController.m */; };
 		0048B21D17FC095E002B786C /* Phone.m in Sources */ = {isa = PBXBuildFile; fileRef = 0048B21C17FC095E002B786C /* Phone.m */; };
 		0048B21F17FC1281002B786C /* libPlivoEndpoint.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0048B21E17FC1281002B786C /* libPlivoEndpoint.a */; };
 		0048B22317FC1307002B786C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0048B22217FC1307002B786C /* AudioToolbox.framework */; };
@@ -48,8 +48,8 @@
 		0048B20517FBFF3E002B786C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		0048B20817FBFF3E002B786C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		0048B20B17FBFF3E002B786C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		0048B20D17FBFF3E002B786C /* PlivoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlivoViewController.h; sourceTree = "<group>"; };
-		0048B20E17FBFF3E002B786C /* PlivoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlivoViewController.m; sourceTree = "<group>"; };
+		0048B20D17FBFF3E002B786C /* PlivoOutgoingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlivoOutgoingViewController.h; sourceTree = "<group>"; };
+		0048B20E17FBFF3E002B786C /* PlivoOutgoingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlivoOutgoingViewController.m; sourceTree = "<group>"; };
 		0048B21B17FC095E002B786C /* Phone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Phone.h; sourceTree = "<group>"; };
 		0048B21C17FC095E002B786C /* Phone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Phone.m; sourceTree = "<group>"; };
 		0048B21E17FC1281002B786C /* libPlivoEndpoint.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPlivoEndpoint.a; sourceTree = "<group>"; };
@@ -132,8 +132,8 @@
 				0048B1FF17FBFF3E002B786C /* PlivoAppDelegate.m */,
 				0048B20717FBFF3E002B786C /* MainStoryboard_iPhone.storyboard */,
 				0048B20A17FBFF3E002B786C /* MainStoryboard_iPad.storyboard */,
-				0048B20D17FBFF3E002B786C /* PlivoViewController.h */,
-				0048B20E17FBFF3E002B786C /* PlivoViewController.m */,
+				0048B20D17FBFF3E002B786C /* PlivoOutgoingViewController.h */,
+				0048B20E17FBFF3E002B786C /* PlivoOutgoingViewController.m */,
 				0048B1F617FBFF3E002B786C /* Supporting Files */,
 				0048B21B17FC095E002B786C /* Phone.h */,
 				0048B21C17FC095E002B786C /* Phone.m */,
@@ -227,7 +227,7 @@
 			files = (
 				0048B1FC17FBFF3E002B786C /* main.m in Sources */,
 				0048B20017FBFF3E002B786C /* PlivoAppDelegate.m in Sources */,
-				0048B20F17FBFF3E002B786C /* PlivoViewController.m in Sources */,
+				0048B20F17FBFF3E002B786C /* PlivoOutgoingViewController.m in Sources */,
 				0048B21D17FC095E002B786C /* Phone.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,6 +367,7 @@
 				0048B21417FBFF3E002B786C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
