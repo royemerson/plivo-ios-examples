@@ -16,8 +16,8 @@
 - (id)init
 {
 #warning change to your actual auth id and auth token
-    NSString *authID = @"MAYMFHYZJKMJG0NJG4OG";
-    NSString *authToken = @"ZDZlNzI1ZDVkNDkzYWIxMzk5NjU1ODkzZWYyZmEx";
+    NSString *authID = @"Your AUTH ID";
+    NSString *authToken = @"YOur AUTH TOKEN";
 
     self = [super init];
     
