@@ -18,6 +18,8 @@
 /* our plivo phone object */
 @property Phone *phone;
 
+@property int started;
+
 @property (strong, nonatomic) UIWindow *window;
 
 @end

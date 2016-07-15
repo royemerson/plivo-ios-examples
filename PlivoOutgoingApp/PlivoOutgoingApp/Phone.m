@@ -11,6 +11,7 @@
 
 @implementation Phone {
     PlivoEndpoint *endpoint;
+	PlivoOutgoing *outCall;
 }
 
 - (id) init
@@ -38,7 +39,7 @@
     NSString *sipUri = [[NSString alloc]initWithFormat:@"sip:%@@phone.plivo.com", dest];
     
     /* create PlivoOutgoing object */
-    PlivoOutgoing *outCall = [endpoint createOutgoingCall];
+    outCall = [endpoint createOutgoingCall];
     
     /* do the call */
     [outCall call:sipUri headers:headers];
@@ -49,6 +50,14 @@
 - (void)setDelegate:(id)delegate
 {
     [endpoint setDelegate:delegate];
+}
+
+- (void) disableAudio{
+	[outCall hold];
+}
+
+- (void) enableAudio{
+	[outCall unhold];
 }
 
 @end

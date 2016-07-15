@@ -63,6 +63,10 @@
  */
 - (void)disconnect __attribute__((deprecated));
 
+- (void) hold;
+
+- (void) unhold;
+
 /**
  * Hangup the call.
  * Calling this method on the PlivoOutgoing object would disconnect the call.
